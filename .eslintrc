@@ -1,0 +1,99 @@
+rules:
+  array-bracket-spacing:
+  - error
+  - always
+  block-scoped-var: error
+  brace-style:
+  - error
+  - 1tbs
+  - allowSingleLine: true
+  camelcase:
+  - error
+  - properties: never
+  comma-spacing:
+  - error
+  - after: true
+    before: false
+  comma-style:
+  - error
+  - last
+  curly:
+  - error
+  - all
+  dot-notation:
+  - error
+  - allowKeywords: true
+  eqeqeq:
+  - error
+  - allow-null
+  guard-for-in: error
+  indent:
+  - error
+  - 2
+  - SwitchCase: 1
+  keyword-spacing: error
+  linebreak-style: error
+  new-cap: error
+  no-caller: error
+  no-cond-assign:
+  - error
+  - except-parens
+  no-console: error
+  no-debugger: error
+  no-dupe-keys: error
+  no-empty: error
+  no-eval: error
+  no-extend-native: error
+  no-irregular-whitespace: error
+  no-iterator: error
+  no-loop-func: error
+  no-multi-str: error
+  no-multiple-empty-lines:
+  - error
+  - max: 1
+    maxBOF: 0
+    maxEOF: 0
+  no-proto: error
+  no-script-url: error
+  no-sequences: error
+  no-spaced-func: error
+  no-trailing-spaces: error
+  no-undef: error
+  no-unneeded-ternary: error
+  no-unused-vars: error
+  no-with: error
+  object-curly-spacing:
+  - error
+  - always
+  one-var:
+  - error
+  - initialized: never
+  padded-blocks:
+  - error
+  - never
+  semi:
+  - error
+  - always
+  semi-spacing:
+  - error
+  - after: true
+    before: false
+  space-before-blocks:
+  - error
+  - always
+  space-before-function-paren:
+  - error
+  - never
+  space-in-parens:
+  - error
+  - never
+  space-infix-ops: error
+  space-unary-ops:
+  - error
+  - nonwords: false
+    words: true
+  strict: error
+  valid-typeof: error
+  wrap-iife:
+  - error
+  - outside

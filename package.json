@@ -1,0 +1,16 @@
+{
+  "name": "lytics-js-styleguide",
+  "version": "1.0.0",
+  "description": "The JS styleguide used by Lytics, Inc.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lytics/lytics-js-styleguide.git"
+  },
+  "author": "Lytics Team <team@lytics.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lytics/lytics-js-styleguide/issues"
+  },
+  "homepage": "https://github.com/lytics/lytics-js-styleguide#readme"
+}

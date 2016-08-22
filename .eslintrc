@@ -41,7 +41,9 @@ rules:
   no-console: error
   no-debugger: error
   no-dupe-keys: error
-  no-empty: error
+  no-empty:
+  - error
+  - allowEmptyCatch: true
   no-eval: error
   no-extend-native: error
   no-irregular-whitespace: error
@@ -92,7 +94,9 @@ rules:
   - error
   - nonwords: false
     words: true
-  strict: error
+  strict:
+  - error
+  - safe
   valid-typeof: error
   wrap-iife:
   - error

@@ -73,6 +73,10 @@ rules:
   padded-blocks:
   - error
   - never
+  quotes:
+  - error
+  - single
+  - avoidEscape: true
   semi:
   - error
   - always

@@ -1,3 +1,4 @@
+extends: eslint:recommended
 rules:
   array-bracket-spacing:
   - error
@@ -10,6 +11,13 @@ rules:
   camelcase:
   - error
   - properties: never
+  comma-dangle:
+  - error
+  - arrays: always-multiline
+    objects: always-multiline
+    imports: always-multiline
+    exports: always-multiline
+    functions: always-multiline
   comma-spacing:
   - error
   - after: true
@@ -35,18 +43,11 @@ rules:
   linebreak-style: error
   new-cap: error
   no-caller: error
-  no-cond-assign:
+  no-else-return:
   - error
-  - except-parens
-  no-console: error
-  no-debugger: error
-  no-dupe-keys: error
-  no-empty:
-  - error
-  - allowEmptyCatch: true
+  - allowElseIf: false
   no-eval: error
   no-extend-native: error
-  no-irregular-whitespace: error
   no-iterator: error
   no-loop-func: error
   no-multi-str: error
@@ -55,24 +56,48 @@ rules:
   - max: 1
     maxBOF: 0
     maxEOF: 0
+  no-new-wrappers: error
   no-proto: error
   no-script-url: error
   no-sequences: error
   no-spaced-func: error
   no-trailing-spaces: error
-  no-undef: error
   no-unneeded-ternary: error
-  no-unused-vars: error
   no-with: error
   object-curly-spacing:
   - error
   - always
+  object-shorthand:
+  - error
   one-var:
   - error
   - initialized: never
+  operator-linebreak:
+  - error
+  - before
   padded-blocks:
   - error
   - never
+  padding-line-between-statements:
+  - error
+  - blankLine: always
+    prev:
+    - const
+    - let
+    - var
+    next: "*"
+  - blankLine: any
+    prev:
+    - const
+    - let
+    - var
+    next:
+    - const
+    - let
+    - var
+  prefer-arrow-callback: error
+  prefer-const: error
+  prefer-spread: error
   quotes:
   - error
   - single
@@ -89,7 +114,9 @@ rules:
   - always
   space-before-function-paren:
   - error
-  - never
+  - named: never
+    anonymous: never
+    asyncArrow: always
   space-in-parens:
   - error
   - never
@@ -101,7 +128,6 @@ rules:
   strict:
   - error
   - safe
-  valid-typeof: error
   wrap-iife:
   - error
   - outside

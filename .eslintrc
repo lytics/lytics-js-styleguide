@@ -131,3 +131,5 @@ rules:
   wrap-iife:
   - error
   - outside
+  require-await:
+  - error

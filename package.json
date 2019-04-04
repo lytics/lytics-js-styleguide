@@ -1,6 +1,6 @@
 {
   "name": "lytics-js-styleguide",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The JS styleguide used by Lytics, Inc.",
   "main": "index.js",
   "repository": {
